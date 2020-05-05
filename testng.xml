@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HubSpot Automation Suite">
+	<listeners>
+			<listener class-name="com.qa.hubspot.listeners.ExtentReportListener" />
+	</listeners>
+  <test thread-count="5" name="HubSpot Automation Test">
+    <classes>
+      
+      <class name="com.qa.hubspot.test.LoginPageTest"/>
+      <class name="com.qa.hubspot.test.HomePageTest"/>
+    
+    </classes>
+  </test> <!-- HubSpot Automation Test -->
+</suite> <!-- HubSpot Automation Suite -->

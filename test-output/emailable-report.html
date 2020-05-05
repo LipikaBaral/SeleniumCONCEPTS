@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">HubSpot Automation Suite</th></tr>
+<tr><td><a href="#t0">HubSpot Automation Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,677</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">HubSpot Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HubSpot Automation Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.test.HomePageTest</td><td><a href="#m0">verifyHomePageTitleTest</a></td><td rowspan="1">1588542021783</td><td rowspan="1">20354</td></tr><tr><th colspan="4">HubSpot Automation Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.hubspot.test.HomePageTest</td><td><a href="#m1">clickOnMyProfileTest</a></td><td rowspan="1">1588542042141</td><td rowspan="1">195</td></tr><tr class="passedodd"><td rowspan="2">com.qa.hubspot.test.LoginPageTest</td><td><a href="#m2">doLoginTest</a></td><td rowspan="1">1588542020916</td><td rowspan="1">863</td></tr><tr class="passedodd"><td><a href="#m3">getPageTitleTest</a></td><td rowspan="1">1588542015974</td><td rowspan="1">4932</td></tr></tbody>
+</table>
+<h2>HubSpot Automation Test</h2><h3 id="m0">com.qa.hubspot.test.HomePageTest#verifyHomePageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Account Setup | HubSpot1&quot;. Current title: &quot;Account Setup | HubSpot&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sonalis-MBP.fritz.box&apos;, ip: &apos;2001:16b8:2e90:b400:49a2:8407:48ee:b25a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.3&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/28/knfwycyj7hg...}, goog:chromeOptions: {debuggerAddress: localhost:51804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e29fdf414f8c4248daa0c8c8f333c0bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspor.util.ElementUtil.waitForPageTitleToBePresent(ElementUtil.java:82)
+	at com.qa.hubspot.pages.HomePage.verifyHomePageTitle(HomePage.java:35)
+	at com.qa.hubspot.test.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.hubspot.test.HomePageTest#clickOnMyProfileTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.hubspot.test.LoginPageTest#doLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.hubspot.test.LoginPageTest#getPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
